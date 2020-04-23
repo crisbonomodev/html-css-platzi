@@ -1,3 +1,49 @@
-body {
-    background-color: khaki;
+html,body {
+
+    padding: 0;
+    margin:0;
+    font-size: 12px;
+    font-family: 'Helvetica';
+
+}
+
+/*---------------------------Inicio del header---------------------------------*/
+
+header {
+    background-color: #7ACC2D;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+nav li {
+    padding: 10px;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+.logo {
+    padding-left:10px;
+}
+
+
+/*-------------------Inicio del main section---------------------------------*/
+
+.main-section {
+    padding:15%;
+    text-align: center;
 }
