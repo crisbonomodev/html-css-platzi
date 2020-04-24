@@ -25,7 +25,7 @@ html,body {
 
 header {
     background-color: var(--green-color);
-    width: 100vw;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -161,7 +161,7 @@ nav li a:hover {
 /*------------------------Footer--------------------------------*/
 footer {
     background-color: var(--black-color);
-    width: 100vw;
+    width: auto;
     height: 50px;
 }
 

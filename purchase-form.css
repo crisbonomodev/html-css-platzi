@@ -1,0 +1,74 @@
+/*------------------Variables-----------------------------*/
+
+:root {
+    --green-color: #7ACC2D;
+    --white-color: white;
+    --black-color: rgb(34, 31, 31);
+    /*padding*/
+    --space: 10px;
+    /*tipografia*/
+    --normal:12px;
+    /*Box Shadow*/
+    
+}
+
+.main-wrapper {
+    height: auto;
+    width: auto;
+}
+
+.form-container {
+    margin:0;
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr);
+    justify-content: space-between;
+    gap:10px;
+    margin:10% 15%;
+   
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px gray;
+    
+}
+
+.item img {
+    width: auto;
+    height: 150px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    justify-content: center;
+    box-shadow: 0 0 2px gray;
+}
+
+.form input {
+    border: 1px solid black;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.form button {
+    background-color:var(--green-color);
+    color: var(--white-color);
+    font-size: 17px;
+    margin: 5px;
+    margin-top:10px;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.form button:hover {
+    background-color: greenyellow;
+}
+
+
+

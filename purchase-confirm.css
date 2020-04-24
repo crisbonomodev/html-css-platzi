@@ -1,0 +1,22 @@
+body {
+    background-color: #313337;
+    color: white;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   padding-top: 10%;
+}
+
+.item-img {
+    height: 150px;
+    width: auto;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+}
