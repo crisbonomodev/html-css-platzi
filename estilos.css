@@ -139,6 +139,10 @@ nav li a:hover {
 
 /*-----------------------Menciones---------------------------------------*/
 
+.mentions h1 {
+    text-align: center;
+}
+
 .mentions-wrapper {
     display: grid;
     grid-template-columns: repeat(4,20%);
