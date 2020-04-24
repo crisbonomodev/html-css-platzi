@@ -1,18 +1,31 @@
+/*------------------Variables-----------------------------*/
+
+:root {
+    --green-color: #7ACC2D;
+    --white-color: white;
+    --black-color: rgb(34, 31, 31);
+    /*padding*/
+    --space: 10px;
+    /*tipografia*/
+    --normal:12px;
+    /*Box Shadow*/
+    
+}
+
+/*------------------Variables-----------------------------*/
 html,body {
 
     padding: 0;
     margin:0;
-    font-size: 12px;
-    font-family: 'Helvetica';
-
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*---------------------------Inicio del header---------------------------------*/
 
 header {
-    background-color: #7ACC2D;
+    background-color: var(--green-color);
     width: 100vw;
-    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,7 +37,7 @@ ul {
 }
 
 nav li {
-    padding: 10px;
+    padding: var(--space);
     list-style: none;
 }
 
@@ -33,17 +46,187 @@ nav li a {
 }
 
 nav li a:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 .logo {
-    padding-left:10px;
+    padding-left:var(--space);
 }
 
 
 /*-------------------Inicio del main section---------------------------------*/
 
 .main-section {
-    padding:15%;
+    padding:0;
     text-align: center;
+    padding-bottom: 100px;
+}
+
+.products {
+    margin-top: 200px;
+    background-image: url(img/curve.png);
+    background-size: cover;
+    background-position: center top;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    grid-gap: var(--space);
+    width: 50%;
+    height: 100%;
+    
+}
+
+.content {
+    background-color:var(--white-color);
+    box-shadow: 0 0 2px black;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.btnProduct {
+    background-color:var(--green-color);
+    color: var(--white-color);
+    width: 90%;
+    font-size: 17px;
+    margin: 5px;
+    padding:var(--space);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btnProduct:hover {
+    background-color: greenyellow;
+}
+/*------------------------Descripcion----------------------------*/
+.home {
+    border-bottom: 1px solid gray;
+}
+
+.description {
+    
+    display: grid;
+    grid-template-columns: repeat(3,20%);
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.description-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.description-item img {
+    width: 150px;
+    height: 150px;
+}
+
+/*-----------------------Menciones---------------------------------------*/
+
+.mentions-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+.mention-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 2px black;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+/*------------------------Footer--------------------------------*/
+footer {
+    background-color: var(--black-color);
+    width: 100vw;
+    height: 50px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+/*-----------------------media queries---------------------------------*/
+@media screen and (max-width:768px) {
+
+    .main-section {
+        padding-bottom: 10px;
+    }
+
+    .products {
+        align-content: center;
+        height: auto;
+        margin-top: 10px;
+        
+    }
+    .products {
+        
+        height:auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .product {
+        align-items: center;
+    justify-content: center;
+    }
+
+}
+@media screen and (max-width:425px) {
+
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    grid-gap: var(--space);
+    width: 90%;
+    height: 100%;
+    
+}
+
+.description {
+    grid-template-columns: 1fr;
+}
+
+
+.mentions-wrapper {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+
+
+
 }
