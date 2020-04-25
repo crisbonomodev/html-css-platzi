@@ -213,6 +213,13 @@ footer a{
         align-items: center;
     justify-content: center;
     }
+    .mentions-wrapper {
+        grid-template-columns: repeat(2,40%);
+        grid-gap: 10px;
+    }
+
+
+
 
 }
 @media screen and (max-width:425px) {
@@ -235,13 +242,11 @@ footer a{
 
 .mentions-wrapper {
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 70%;
     grid-gap: 10px;
     justify-content: center;
 }
 
 
 
-
 }
-
